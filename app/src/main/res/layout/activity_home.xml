@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/fajarStatus"
+        android:layout_width="182dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/FajarBtn"
+        android:background="#4E0D3A"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Not Selected"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dateTv"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="247dp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="November 10, 2018 Saturday"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:textColor="#4E0D3A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/mosquePic"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dailyBtn"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/masjid_logo"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/masjid_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#5D1049"
+        android:fontFamily="@font/raleway_medium"
+        android:lineSpacingExtra="24sp"
+        android:text="           Prayer Tracker"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="59dp"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/dailyBtn"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:background="#5D1049"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="DAILY"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="DAILY" />
+
+    <Button
+        android:id="@+id/weekBtn"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mosquePic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-0dp"
+        android:background="#5D1049"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="WEEKLY"
+        android:textColor="#A8A8A8"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/monthBtn"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mosquePic"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-0dp"
+        android:background="#5D1049"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="MONTHLY"
+        android:textColor="#A8A8A8"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/FajarBtn"
+        android:layout_width="177dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/DhuharBtn"
+        android:layout_alignParentStart="true"
+        android:background="#720D5D"
+        android:fontFamily="@font/raleway_bold"
+        android:text="FAJAR"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/DhuharBtn"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AsarBtn"
+        android:layout_alignParentStart="true"
+        android:background="#5D1049"
+        android:fontFamily="@font/raleway_bold"
+        android:text="DHUHAR"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/AsarBtn"
+        android:layout_width="177dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/MaghribBtn"
+        android:layout_alignParentStart="true"
+        android:background="#720D5D"
+        android:fontFamily="@font/raleway_bold"
+        android:text="ASAR"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/MaghribBtn"
+        android:layout_width="177dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/IshaBtn"
+        android:layout_alignParentStart="true"
+        android:background="#5D1049"
+        android:fontFamily="@font/raleway_bold"
+        android:text="MAGHRIB"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/IshaBtn"
+        android:layout_width="177dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp"
+        android:background="#720D5D"
+        android:fontFamily="@font/raleway_bold"
+        android:text="ISHA"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/shareBtn"
+        android:layout_width="35dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp"
+        app:srcCompat="@drawable/share" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="38dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/meneu" />
+
+    <TextView
+        android:id="@+id/ishaStatus"
+        android:layout_width="182dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/MaghribBtn"
+        android:background="#4E0D3A"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Not Selected"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/maghribStatus"
+        android:layout_width="182dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/AsarBtn"
+        android:background="#4E0D3A"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Not Selected"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/asarStatus"
+        android:layout_width="182dp"
+        android:layout_height="42dp"
+        android:layout_alignBottom="@+id/AsarBtn"
+        android:layout_alignParentEnd="true"
+        android:background="#4E0D3A"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Not Selected"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dhuharStatus"
+        android:layout_width="182dp"
+        android:layout_height="42dp"
+        android:layout_alignBottom="@+id/DhuharBtn"
+        android:layout_alignParentEnd="true"
+        android:background="#4E0D3A"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Not Selected"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
